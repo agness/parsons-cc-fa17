@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Parsons PUCD 2035 Creative Computing Fall 2017</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="../vendor/default.css">
+  <script src="../vendor/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <style>
+    body {
+      padding-top: 54px;
+    }
+    @media (min-width: 992px) {
+      body {
+        padding-top: 56px;
+      }
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Creative Computing</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Overview</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="../assignments.html">Assignments
+              <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../readings.html">Readings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../PUCD_2035_A_CHANG_FA17.pdf" target="_blank">Syllabus</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-left">
+          <h1 class="mt-5">Class 2 Additional Instructions</h1>
+          <br><br>
+          <p>Make sure you have the following complete as we did in class:
+          <ul>
+            <li>Setup your <a href="http://c9.io">c9.io</a> account (via my email team invite)</li>
+            <li>Connect your <a href="http://c9.io">c9.io</a> account with your Github account (at <a href="http://c9.io">c9.io</a> > "Settings" > "Connected Services" > "Connect")</li>
+            <li>Clone your github.io repository as a c9 workspace by clicking on "Repositories" on the left; you should see your github repository, click on "Clone to Edit". Name your workspace "homepage" and click on "Create". The loading bar might take a moment but you should find yourself in a text editor with "Welcome..." text at the top.</li>
+            <li>Create a new file under "File > New" and save the file as <code>index.html</code></li>
+            </ul>
+            </p>
+            <br><br>
+          <p>Now to complete your first html page:<br><br>
+            Copy-paste the following code into your index.html file area, and save the file.
+<pre><code class="html">
+ &lt;html&gt;
+   &lt;head&gt;
+     &lt;title&gt;Hello, world.&lt;/title&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+     Hello, world.
+   &lt;/body&gt;
+ &lt;/html&gt;
+</code></pre>
+            </p>
+          <p>Click on Preview > Live Preview file. This should open up a panel on the right that imitates a browser, rendering your code. From here, any updates to your code is reflected in real-time on the right side.<br><br>
+          Play around with the code here and observe your changes (these changes stay private, in cloud9, until you push it to github.)</p>
+          <img src="class2-livepreview.png" class="img-fluid">
+          <p>When you're satisfied with the changes, and at any time, you can publish your changes to the internet.<br><br>
+          Publish your changes by typing in the following three git commands in the console:
+          <pre><code>
+git add .
+git commit -am "describe your changes here, for example, add pizza photo"
+git push
+          </code></pre>
+
+          Go to <a href="#">yourNewID.github.io</a>, and you should see your updates almost immediately.</p>
+          <img src="class2-helloworld.png" class="img-fluid">
+          <br><br>
+          <p>Everything you see on a web page is going to be contained within the <code>&lt;body&gt;</code> tag.<br><br>
+          Below are some common HTML tags that you can use to begin building your index page.<br><br>
+          For more tags to play with, see <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">this extensive HTML reference page</a>. 
+            <pre><code class="html">
+&lt;h1&gt;This is heading 1&lt;/h1&gt;
+&lt;h2&gt;This is heading 2&lt;/h2&gt;
+&lt;h3&gt;This is heading 3&lt;/h3&gt;
+&lt;h4&gt;This is heading 4&lt;/h4&gt;
+&lt;h5&gt;This is heading 5&lt;/h5&gt;
+&lt;h6&gt;This is heading 6&lt;/h6&gt;
+
+&lt;p&gt;This is a paragraph&lt;/p&gt;
+
+To break&lt;br&gt;lines&lt;br&gt;in a&lt;br&gt;paragraph,&lt;br&gt;use the br element.
+
+&lt;hr&gt;
+The hr tag creates a horizontal line in an HTML page.
+
+&lt;em&gt;This is emphasized text&lt;/em&gt;
+
+&lt;strong&gt;This is strong text&lt;/strong&gt;
+
+&lt;!--This is a comment. Comments are not displayed in the browser--&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;This is an&lt;/li&gt;
+  &lt;li&gt;Ordered&lt;/li&gt;
+  &lt;li&gt;List&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;This is an&lt;/li&gt;
+  &lt;li&gt;Unordered&lt;/li&gt;
+  &lt;li&gt;List&lt;/li&gt;
+&lt;/ul&gt;
+
+The &lt;code&gt;code element&lt;/code&gt; example
+
+The &lt;em&gt;em element&lt;/em&gt; example
+
+The &lt;mark&gt;mark element&lt;/mark&gt; example
+
+The &lt;small&gt;small element&lt;/small&gt; example
+
+The &lt;strong&gt;strong element&lt;/strong&gt; example
+
+The &lt;sub&gt;sub element&lt;/sub&gt; example
+ 
+The &lt;sup&gt;sup element&lt;/sup&gt; example
+
+&lt;input type="radio" name="rad"&gt; Radio input
+
+&lt;input type="checkbox"&gt; Checkbox input
+
+Text input &lt;input type="text" value="default value that goes on and on without stopping or punctuation"&gt;
+
+&lt;a href="http://www.newschool.edu"&gt;This is an absolute link&lt;/a&gt;
+
+&lt;a href="myfolder/myfile.html"&gt;This is a relative link&lt;/a&gt;
+            </code></pre>
+            <img src="class2-demo2.png" class="img-fluid">
+        </div>
+      </div>
+    </div>
+
+          <!-- Bootstrap core JavaScript -->
+          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+        </body>
+
+        </html>
